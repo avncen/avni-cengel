@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Briefcase, Code, Globe, Mail, Linkedin, Users } from "lucide-react";
+import { Briefcase, Code, Globe, Linkedin, Users } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const fadeUp = (delay = 0) => ({
@@ -49,7 +49,7 @@ const Index = () => {
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] mb-6"
           >
             Avni{" "}
-            <span className="text-primary">Cengel</span>
+            <span className="text-primary">Çengel</span>
           </motion.h1>
           <motion.p
             {...fadeUp(0.35)}
@@ -68,13 +68,6 @@ const Index = () => {
             >
               <Linkedin className="h-4 w-4" />
               LinkedIn
-            </a>
-            <a
-              href="mailto:hello@cengel.ai"
-              className="group inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-6 py-3 text-sm font-medium text-foreground transition-all hover:border-primary/50"
-            >
-              <Mail className="h-4 w-4" />
-              Contact
             </a>
           </motion.div>
         </div>
@@ -158,37 +151,10 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer / CTA */}
-      <section className="px-6 py-24 sm:px-12 md:px-24 lg:px-32 bg-card">
-        <div className="mx-auto max-w-4xl text-center">
-          <motion.h2
-            {...fadeUp()}
-            className="text-3xl sm:text-4xl font-bold mb-4"
-          >
-            Let's work together
-          </motion.h2>
-          <motion.p
-            {...fadeUp(0.1)}
-            className="text-muted-foreground mb-8 max-w-md mx-auto"
-          >
-            Whether it's enterprise software, IT leadership, or something
-            new — I'd love to hear from you.
-          </motion.p>
-          <motion.div {...fadeUp(0.2)} className="flex justify-center gap-3 flex-wrap">
-            <a
-              href="mailto:hello@cengel.ai"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground transition-all hover:brightness-110"
-            >
-              <Mail className="h-4 w-4" />
-              Get in Touch
-            </a>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Bottom bar */}
       <footer className="px-6 py-8 sm:px-12 md:px-24 lg:px-32 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Avni Cengel. All rights reserved.
+        © {new Date().getFullYear()} Avni Çengel. All rights reserved.
       </footer>
     </div>
   );

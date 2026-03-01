@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Briefcase, Film, Code, Globe, Mail, Linkedin } from "lucide-react";
+import { ArrowUpRight, Briefcase, Code, Globe, Mail, Linkedin, Users } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const fadeUp = (delay = 0) => ({
@@ -17,20 +17,13 @@ const experiences = [
     description:
       "Leading international Track & Trace systems and software delivery across global markets. Driving regulatory compliance solutions and managing cross-functional engineering teams.",
   },
-  {
-    role: "Founder & Creative Director",
-    company: "Cengel Studio",
-    period: "Ongoing",
-    description:
-      "A creative studio blending code and cinema — building web applications, mobile apps, and producing music videos, short films, and sound design.",
-  },
 ];
 
 const services = [
-  { icon: Code, title: "Software", desc: "Web & mobile apps, APIs, ERP systems" },
-  { icon: Film, title: "Film & Video", desc: "Music videos, commercials, short films" },
+  { icon: Code, title: "Software Delivery", desc: "Leading global software teams and delivery centers" },
   { icon: Globe, title: "Track & Trace", desc: "Global regulatory compliance solutions" },
-  { icon: Briefcase, title: "Enterprise", desc: "IT strategy & delivery leadership" },
+  { icon: Users, title: "Team Leadership", desc: "Cross-functional engineering team management" },
+  { icon: Briefcase, title: "Enterprise IT", desc: "IT strategy & digital transformation" },
 ];
 
 const Index = () => {
@@ -48,7 +41,7 @@ const Index = () => {
         <div className="relative z-10 w-full px-6 py-24 sm:px-12 md:px-24 lg:px-32">
           <motion.div {...fadeUp(0.1)} className="mb-4">
             <span className="inline-block rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-medium tracking-wider text-primary uppercase">
-              IT Director · Creative Studio
+              IT Director · Software Delivery Leadership
             </span>
           </motion.div>
           <motion.h1
@@ -62,9 +55,9 @@ const Index = () => {
             {...fadeUp(0.35)}
             className="max-w-xl text-lg sm:text-xl text-secondary-foreground/80 leading-relaxed mb-10"
           >
-            Experienced IT Director & creative technologist blending enterprise
-            software leadership with film and digital storytelling. Based in
-            Madrid.
+            Experienced IT Director with deep expertise in Track & Trace
+            systems, regulatory compliance, and software delivery across global
+            enterprises. Based in Madrid.
           </motion.p>
           <motion.div {...fadeUp(0.5)} className="flex flex-wrap gap-3">
             <a
@@ -75,15 +68,6 @@ const Index = () => {
             >
               <Linkedin className="h-4 w-4" />
               LinkedIn
-            </a>
-            <a
-              href="https://cengel.ai/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-6 py-3 text-sm font-medium text-foreground transition-all hover:border-primary/50"
-            >
-              Cengel Studio
-              <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
             <a
               href="mailto:hello@cengel.ai"
@@ -110,10 +94,8 @@ const Index = () => {
             </p>
             <p className="text-base text-muted-foreground leading-relaxed max-w-2xl">
               Over the years, I've led international teams building
-              mission-critical systems while simultaneously running a creative
-              studio that blends code and cinema. From robust web applications
-              to immersive films, I bring a unique intersection of technical
-              leadership and creative vision.
+              mission-critical systems, driving regulatory compliance, and
+              managing complex software delivery across multiple markets.
             </p>
           </motion.div>
         </div>
@@ -189,8 +171,8 @@ const Index = () => {
             {...fadeUp(0.1)}
             className="text-muted-foreground mb-8 max-w-md mx-auto"
           >
-            Whether it's enterprise software, a creative project, or something
-            in between — I'd love to hear from you.
+            Whether it's enterprise software, IT leadership, or something
+            new — I'd love to hear from you.
           </motion.p>
           <motion.div {...fadeUp(0.2)} className="flex justify-center gap-3 flex-wrap">
             <a
@@ -199,15 +181,6 @@ const Index = () => {
             >
               <Mail className="h-4 w-4" />
               Get in Touch
-            </a>
-            <a
-              href="https://cengel.ai/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-7 py-3 text-sm font-medium text-foreground transition-all hover:border-primary/50"
-            >
-              Visit Studio
-              <ArrowUpRight className="h-3.5 w-3.5" />
             </a>
           </motion.div>
         </div>

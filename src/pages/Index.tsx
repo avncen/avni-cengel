@@ -3,10 +3,10 @@ import { Briefcase, Code, Globe, Linkedin, Users } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 24 },
+  initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { delay, duration: 0.7, ease: "easeOut" as const },
+  viewport: { once: true, margin: "-50px" },
+  transition: { delay, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] as const },
 });
 
 const experiences = [
@@ -108,6 +108,7 @@ const Index = () => {
               <motion.div
                 key={s.title}
                 {...fadeUp(i * 0.1)}
+                whileHover={{ y: -4, transition: { duration: 0.2 } }}
                 className="rounded-xl border border-border bg-background/50 p-6 transition-colors hover:border-primary/30"
               >
                 <s.icon className="mb-4 h-6 w-6 text-primary" />
